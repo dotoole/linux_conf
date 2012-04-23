@@ -1,0 +1,6 @@
+#!/bin/bash
+for i in `find . -name *.java -print`; 
+do 
+iconv -f WINDOWS-1252 -t UTF-8//TRANSLIT $i -o $i.new;
+mv -f $i.new $i; 
+done

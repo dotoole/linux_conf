@@ -1,0 +1,5 @@
+#!/bin/bash
+git checkout master
+git svn rebase
+git checkout work
+git merge master

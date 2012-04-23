@@ -1,0 +1,33 @@
+#!/bin/bash
+# ************************************************************
+# * THIS SCRIPT WILL RUN ALL SQL SCRIPTS IN CURRENT DIRECTORY 
+# * USAGE runalloracle username password tnsnamesAlias 
+# ************************************************************
+username=$1
+password=$2
+tnsname=$3
+
+# check parameter from command line
+if [ -z $username ]; then
+    echo "enter username:"
+    read username
+fi
+
+if [ -z $password ]; then
+    echo "enter password:"
+    read password
+fi
+
+if [ -z $tnsname ]; then
+    echo "enter TNS Names Alias:"
+    read tnsname
+fi
+
+rm -f run.txt
+touch run.txt
+for f in *.sql
+do
+echo @$f >> run.txt
+done
+sqlplus $username/$password@$tnsname @run.txt
+

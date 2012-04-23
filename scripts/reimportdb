@@ -1,0 +1,9 @@
+#!/bin/bash
+# reimportdb <schema_name> <DATA | NO_DATA>
+cd ./src/mosaic/main/config
+./db_setup_ora.sh $1 $1 xe password $2 AUTO
+if grep -qi error /tmp/Mosaic_db_setup_ora_logs/*.*
+then echo "errors occured during update"
+else echo "update successful"
+fi
+cd ../../../../

@@ -1,0 +1,9 @@
+#! /bin/sh
+IP=$(/sbin/ifconfig wlan0 | sed -n 's/.*inet *addr:\([0-9\.]*\).*/\1/p')
+echo $IP
+(
+echo server framework.corelogic.local
+echo update delete dolan-laptop.corelogic.local A
+echo update add dolan-laptop.corelogic.local 3600 IN A $IP 
+echo send
+) | nsupdate

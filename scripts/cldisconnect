@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo vpnc-disconnect
+sudo umount /mnt/framework2

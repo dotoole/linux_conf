@@ -1,0 +1,8 @@
+#!/bin/bash
+cd ./src/mosaic/main/config
+./db_setup_ora.sh mosaic mosaic xe password DATA AUTO
+if grep -qi error /tmp/Mosaic_db_setup_ora_logs/*.*
+then echo "errors occured during update"
+else echo "update successful"
+fi
+cd ../../../../

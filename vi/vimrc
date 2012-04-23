@@ -1,0 +1,12 @@
+set number            " Show numbers on the left of each line
+syntax on
+:colorscheme zenburn  " Set the colorscheme to zenburn
+au Bufread,BufNewFile *.feature set filetype=gherkin
+au! Syntax gherkin source ~/.vim/cucumber.vim
+"set foldmethod=syntax
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set hlsearch
+:nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>

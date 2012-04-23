@@ -1,0 +1,2 @@
+#!/bin/bash
+nohup ~/eclipse/eclipse -vm "/home/dolanotoole/jdk1.6.0_26/bin" &

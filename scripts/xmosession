@@ -1,0 +1,11 @@
+#!/bin/bash
+tray &
+xscreensaver -no-splash &
+gnome-power-manager &
+wicd-gtk &
+gnome-settings-daemon &
+#feh --bg-scale ~/Pictures/02567_thecosmos_2560x1024.jpg
+#xcompmgr -cC &
+wmname LG3D
+#davmail &
+nautilus -n &
