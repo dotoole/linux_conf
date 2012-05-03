@@ -1,0 +1,18 @@
+#!/bin/bash
+# script to do an svn rebase on a working branch in a git repository
+# will not run if 'master' is checked out
+currentBranch=$(git branch | sed --quiet 's/* \(.*\)/\1/p')
+if [ "$currentBranch" = "master" ];
+then
+    echo "Cannot run on master branch. Checkout a branch"
+    exit
+else
+    echo "Rebasing $currentBranch"
+    git stash
+    git checkout master
+    git svn rebase
+    git checkout $currentBranch
+    git rebase master
+    git stash pop
+    exit
+fi
