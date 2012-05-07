@@ -1,2 +1,2 @@
 #!/bin/bash
-disper -s DFP-2 
+disper -d DFP-2,CRT-0 -t "right" -e 
