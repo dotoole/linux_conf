@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ./src/mosaic/main/config
-./db_setup_ora.sh unittest unittest xe password NO_DATA AUTO
+./db_setup_ora.sh unittest unittest xe sys NO_DATA AUTO
 if grep -qi error /tmp/Mosaic_db_setup_ora_logs/*.*
 then echo "errors occured during update"
 else echo "update successful"

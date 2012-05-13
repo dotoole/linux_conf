@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo vpnc-disconnect
 sudo umount /mnt/framework2
+sudo vpnc-disconnect

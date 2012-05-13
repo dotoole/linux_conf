@@ -1,5 +1,5 @@
 #! /bin/sh
-IP=$(/sbin/ifconfig wlan0 | sed -n 's/.*inet *addr:\([0-9\.]*\).*/\1/p')
+IP=$(/sbin/ifconfig wlan1 | sed -n 's/.*inet *addr:\([0-9\.]*\).*/\1/p')
 echo $IP
 (
 echo server framework.corelogic.local
