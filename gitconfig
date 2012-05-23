@@ -10,3 +10,4 @@
 	bs = branch -a
     glog = log --all --oneline --graph --decorate
     shitpants = svn dcommit
+    files = show --pretty="format:" --name-only
