@@ -1,0 +1,59 @@
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+# bira kphoen mortalscumbag smt tjkirch
+ZSH_THEME="bira"
+
+# Example aliases
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="vim ~/.zshrc"
+alias cdd='ant clean_deploy_dev'
+alias deploy='ant /noresolve deploy_dev' 
+
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
+
+# Comment this out to disable weekly auto-update checks
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment following line if you want to disable colors in ls
+# DISABLE_LS_COLORS="true"
+
+# Uncomment following line if you want to disable autosetting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+COMPLETION_WAITING_DOTS="true"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git git-flow github svn vi-mode debian zsh-syntax-highlighting)
+
+source $ZSH/oh-my-zsh.sh
+
+# Customize to your needs...
+bindkey -e
+
+export OC4J_HOME="/home/dolanotoole/oc4j_10_1_3"
+#export ORACLE_HOME="/home/dolanotoole/oc4j_10_1_3"
+#export JAVA_HOME="/home/dolanotoole/jdk1.5.0_22"
+export JAVA_HOME="/home/dolanotoole/jdk1.6.0_32"
+#export JBOSS_HOME="/home/dolanotoole/jboss-6.0.0.Final"
+export TERM=xterm-256color
+ORACLE_HOME=/usr/lib/oracle/xe/app/oracle/product/10.2.0/server
+PATH=$PATH:$ORACLE_HOME/bin:$JBOSS_HOME/bin:$JAVA_HOME/bin
+export ORACLE_HOME
+export ORACLE_SID=XE
+export PATH
+
+export ANT_OPTS="-XX:MaxPermSize=256m -Xmx940m -Denv.ORACLE_HOME=/home/dolanotoole/oc4j_10_1_3"
+#WebLogic variables
+export MW_HOME="/home/dolanotoole/weblogic"
+#export JAVA_OPTIONS="-Dframework.database=ss -Dframework.switchOnFullTextSearch=false -Dframework.log.dir=/home/dolanotoole/log -Djava.security.auth.login.config=/home/dolanotoole/wlsdomain/base_domain/config/jaas.config -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n -javaagent:/home/dolanotoole/wlsdomain/base_domain/lib/aspectjweaver.jar"
+export USER_MEM_ARGS="-XX:+UseCompressedOops -Xms128m -Xmx1024m -XX:MaxPermSize=256m"
+export NODE_PATH="/usr/local/lib/jsctags"
