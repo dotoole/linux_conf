@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/dolanotoole/jboss-6.0.0.Final/server/default/conf/bootstrap'
-let g:netrw_dirhist_2='/home/dolanotoole/projects/mosaic/src/mosaic/main/config/db_setup_ora'
-let g:netrw_dirhist_3='/home/dolanotoole/projects/backbone-aura/new-version/js/aura'

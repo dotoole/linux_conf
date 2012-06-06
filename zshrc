@@ -1,6 +1,14 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+printf '\033[0;32m%s\033[0m\n' '         __                                     __   '
+printf '\033[0;32m%s\033[0m\n' '  ____  / /_     ____ ___  __  __   ____  _____/ /_  '
+printf '\033[0;32m%s\033[0m\n' ' / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ '
+printf '\033[0;32m%s\033[0m\n' '/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / '
+printf '\033[0;32m%s\033[0m\n' '\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  '
+printf '\033[0;32m%s\033[0m\n' '                        /____/                       '
+printf '\033[0;32m%s\033[0m\n' '                                                     '
+ 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -32,7 +40,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow github svn vi-mode debian zsh-syntax-highlighting)
+plugins=(git github svn vi-mode debian zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -46,7 +54,7 @@ export JAVA_HOME="/home/dolanotoole/jdk1.6.0_32"
 #export JBOSS_HOME="/home/dolanotoole/jboss-6.0.0.Final"
 export TERM=xterm-256color
 ORACLE_HOME=/usr/lib/oracle/xe/app/oracle/product/10.2.0/server
-PATH=$PATH:$ORACLE_HOME/bin:$JBOSS_HOME/bin:$JAVA_HOME/bin
+PATH=$JAVA_HOME/bin:$PATH:$ORACLE_HOME/bin:$JBOSS_HOME/bin
 export ORACLE_HOME
 export ORACLE_SID=XE
 export PATH
