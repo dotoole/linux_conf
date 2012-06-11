@@ -23,7 +23,7 @@ alias cdd='ant clean_deploy_dev'
 alias deploy='ant /noresolve deploy_dev' 
 
 # Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
