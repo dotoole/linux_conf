@@ -9,5 +9,5 @@
 	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
 	bs = branch -a
     glog = log --all --oneline --graph --decorate
-    shitpants = svn dcommit
+    shitpants = svn dcommit --rmdir
     files = show --pretty="format:" --name-only
