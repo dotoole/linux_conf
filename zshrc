@@ -47,6 +47,15 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 bindkey -e
 
+export LESS_TERMCAP_mb=$'\E[01;31m'
+export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;47;34m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;32m'
+export LESS=-r
+
 export OC4J_HOME="/home/dolanotoole/oc4j_10_1_3"
 #export ORACLE_HOME="/home/dolanotoole/oc4j_10_1_3"
 #export JAVA_HOME="/home/dolanotoole/jdk1.5.0_22"
