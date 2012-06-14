@@ -4,6 +4,8 @@ xscreensaver -no-splash &
 #gnome-power-manager &
 #wicd-gtk &
 gnome-settings-daemon &
+gnome-sound-applet &
+nm-applet &
 # gnome-keyring-daemon &
 #feh --bg-scale ~/Pictures/02567_thecosmos_2560x1024.jpg
 #xcompmgr -cC &
