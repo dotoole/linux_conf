@@ -1,13 +1,10 @@
 [user]
 	name = Dolan O'Toole
 	email = dolan.otoole@corelogic.co.uk
-[clolor]
-	ui = on
 [color]
-	ui = auto
+	ui = on
 [alias]
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	bs = branch -a
-    glog = log --all --oneline --graph --decorate
     shitpants = svn dcommit --rmdir
     files = show --pretty="format:" --name-only
