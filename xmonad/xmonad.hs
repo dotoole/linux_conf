@@ -8,7 +8,6 @@ import System.IO
 myManageHook = composeAll
     [ className =? "Gimp"      --> doFloat
     , className =? "Vncviewer" --> doFloat
-    , className =? "VirtualBox" --> doFloat
     ]
  
 main = do
