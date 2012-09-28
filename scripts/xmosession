@@ -7,9 +7,9 @@ gnome-settings-daemon &
 gnome-sound-applet &
 nm-applet &
 # gnome-keyring-daemon &
-#feh --bg-scale ~/Pictures/02567_thecosmos_2560x1024.jpg
+feh --bg-scale ~/Pictures/01740_rockefellersview_1920x1200.jpg
 #xcompmgr -cC &
 wmname LG3D
 #davmail &
-nautilus -n &
+#nautilus -n &
 dropbox start
