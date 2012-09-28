@@ -5,13 +5,14 @@ import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
 import XMonad.Layout.Spacing
+import XMonad.Layout.Spiral
 
 myManageHook = composeAll
     [ className =? "Gimp"      --> doFloat
     , className =? "Vncviewer" --> doFloat
     ]
 
-myLayout = tiled ||| Mirror tiled ||| Full
+myLayout = tiled ||| Mirror tiled ||| spiral (6/7) ||| Full
   where
         -- default tiling algorithm partitions the screen into two panes
         tiled = spacing 2 $ Tall nmaster delta ratio
@@ -24,6 +25,8 @@ myLayout = tiled ||| Mirror tiled ||| Full
 
         -- Percent of screen to increment by when resizing panes
         delta = 3/100
+
+myWorkspaces = ["1:terms","2:server","3:eclipse","4:web","5:test","6:VM","7","8"]
 main = do
     xmproc <- spawnPipe "/usr/bin/xmobar"
     xmonad $ defaultConfig
@@ -38,6 +41,7 @@ main = do
         , borderWidth = 1 
         , normalBorderColor = "#abc123"
         , focusedBorderColor = "red"
+        , workspaces = myWorkspaces
         } `additionalKeys`
         [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
         , ((controlMask, xK_Print), spawn "sleep 0.2; scrot -s")
