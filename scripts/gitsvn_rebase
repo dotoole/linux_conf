@@ -8,7 +8,7 @@ then
     exit
 else
     echo "Rebasing $currentBranch"
-    git stash --include-untracked
+    git stash --all
     git checkout master
     git svn rebase
     git checkout $currentBranch
