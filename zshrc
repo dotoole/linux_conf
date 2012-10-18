@@ -74,3 +74,4 @@ export MW_HOME="/home/dolanotoole/weblogic"
 #export JAVA_OPTIONS="-Dframework.database=ss -Dframework.switchOnFullTextSearch=false -Dframework.log.dir=/home/dolanotoole/log -Djava.security.auth.login.config=/home/dolanotoole/wlsdomain/base_domain/config/jaas.config -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n -javaagent:/home/dolanotoole/wlsdomain/base_domain/lib/aspectjweaver.jar"
 export USER_MEM_ARGS="-XX:+UseCompressedOops -Xms128m -Xmx1024m -XX:MaxPermSize=256m"
 export NODE_PATH="/usr/local/lib/jsctags"
+ulimit -c unlimited
