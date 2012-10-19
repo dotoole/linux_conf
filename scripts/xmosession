@@ -7,7 +7,7 @@ gnome-settings-daemon &
 gnome-sound-applet &
 nm-applet &
 # gnome-keyring-daemon &
-feh --bg-scale ~/Pictures/01740_rockefellersview_1920x1200.jpg
+feh --bg-scale ~/Pictures/03076_amazingmirrormilkyway_1920x1200.jpg
 #xcompmgr -cC &
 wmname LG3D
 #davmail &
