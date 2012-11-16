@@ -1,0 +1,8 @@
+#!/bin/bash
+xscreensaver -no-splash &
+gnome-settings-daemon &
+gnome-sound-applet &
+nm-applet &
+feh --bg-scale ~/Pictures/03076_amazingmirrormilkyway_1920x1200.jpg
+wmname LG3D
+dropbox start
