@@ -22,6 +22,7 @@ alias zshconfig="vim ~/.zshrc"
 alias cdd='ant clean_deploy_dev'
 alias deploy='ant /noresolve deploy_dev' 
 alias vless='/usr/share/vim/vim73/macros/less.sh'
+alias svndiff='svn diff | colordiff | less -R'
 
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"

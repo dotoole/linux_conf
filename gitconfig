@@ -6,5 +6,5 @@
 [alias]
     lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	bs = branch -a
-    shitpants = svn dcommit --rmdir
+    rtb = svn dcommit --rmdir
     files = show --pretty="format:" --name-only
