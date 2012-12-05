@@ -14,7 +14,9 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # bira kphoen mortalscumbag smt tjkirch
-ZSH_THEME="bira"
+#ZSH_THEME="bira"
+#ZSH_THEME="intheloop"
+ZSH_THEME="agnoster"
 
 # Example aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -42,7 +44,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github svn vi-mode debian zsh-syntax-highlighting)
+plugins=(git github git-extras gitfast svn vi-mode debian zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 

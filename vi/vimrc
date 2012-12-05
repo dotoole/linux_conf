@@ -2,9 +2,11 @@ set number            " Show numbers on the left of each line
 syntax on
 filetype on
 au BufNewFile,BufRead *.hb set filetype=html
-:colorscheme distinguished  " Set the colorscheme to zenburn
+":colorscheme distinguished
 ":colorscheme zenburn  " Set the colorscheme to zenburn
 ":colorscheme habiLight  " Set the colorscheme to habiLight
+set background=dark
+colorscheme solarized
 au Bufread,BufNewFile *.feature set filetype=gherkin
 au! Syntax gherkin source ~/.vim/cucumber.vim
 "set foldmethod=syntax
