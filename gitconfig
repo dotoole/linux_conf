@@ -8,3 +8,5 @@
 	bs = branch -a
     rtb = svn dcommit --rmdir
     files = show --pretty="format:" --name-only
+[core]
+	pager = less -S
