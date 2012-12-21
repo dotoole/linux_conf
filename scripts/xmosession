@@ -3,8 +3,8 @@ tray &
 xscreensaver -no-splash &
 #gnome-power-manager &
 #wicd-gtk &
-gnome-settings-daemon &
-gnome-sound-applet &
+#gnome-settings-daemon &
+#gnome-sound-applet &
 nm-applet &
 # gnome-keyring-daemon &
 feh --bg-scale ~/Pictures/xmonad_1080p.png
@@ -12,4 +12,5 @@ feh --bg-scale ~/Pictures/xmonad_1080p.png
 wmname LG3D
 #davmail &
 #nautilus -n &
-dropbox start
+#dropbox start
+#xfce4-settings-helper --display :0.0

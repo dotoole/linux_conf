@@ -42,6 +42,7 @@ main = do
         , normalBorderColor = "#abc123"
         , focusedBorderColor = "red"
         , workspaces = myWorkspaces
+        , terminal = "gnome-terminal"
         } `additionalKeys`
         [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
         , ((controlMask, xK_Print), spawn "sleep 0.2; scrot -s")
