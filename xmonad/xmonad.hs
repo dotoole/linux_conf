@@ -10,6 +10,7 @@ import XMonad.Layout.Spiral
 myManageHook = composeAll
     [ className =? "Gimp"      --> doFloat
     , className =? "Vncviewer" --> doFloat
+    , className =? "Xfce4-notifyd" --> doIgnore
     ]
 
 myLayout = tiled ||| Mirror tiled ||| spiral (6/7) ||| Full
