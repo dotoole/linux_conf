@@ -26,7 +26,6 @@ myLayout = tiled ||| Mirror tiled ||| spiral (6/7) ||| Full
         -- Percent of screen to increment by when resizing panes
         delta = 3/100
 
-myWorkspaces = ["1:terms","2:server","3:eclipse","4:web","5:test","6:VM","7","8"]
 main = do
     xmproc <- spawnPipe "/usr/bin/xmobar"
     xmonad $ defaultConfig
@@ -41,7 +40,6 @@ main = do
         , borderWidth = 1 
         , normalBorderColor = "#abc123"
         , focusedBorderColor = "red"
-        , workspaces = myWorkspaces
         , terminal = "gnome-terminal"
         } `additionalKeys`
         [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
