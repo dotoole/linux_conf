@@ -58,12 +58,13 @@ export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_so=$'\E[01;47;34m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
+source $HOME/.localrc
 
-export OC4J_HOME="/home/dolanotoole/oc4j_10_1_3"
-#export ORACLE_HOME="/home/dolanotoole/oc4j_10_1_3"
-#export JAVA_HOME="/home/dolanotoole/jdk1.5.0_22"
-export JAVA_HOME="/home/dolanotoole/jdk1.6.0_32"
-#export JBOSS_HOME="/home/dolanotoole/jboss-6.0.0.Final"
+export OC4J_HOME="$HOME/oc4j_10_1_3"
+#export ORACLE_HOME="$HOME/oc4j_10_1_3"
+#export JAVA_HOME="$HOME/jdk1.5.0_22"
+export JAVA_HOME="$HOME/jdk1.6.0_32"
+#export JBOSS_HOME="$HOME/jboss-6.0.0.Final"
 export TERM=xterm-256color
 ORACLE_HOME=/usr/lib/oracle/xe/app/oracle/product/10.2.0/server
 PATH=$JAVA_HOME/bin:$PATH:$ORACLE_HOME/bin:$JBOSS_HOME/bin
@@ -71,10 +72,10 @@ export ORACLE_HOME
 export ORACLE_SID=XE
 export PATH
 
-export ANT_OPTS="-XX:MaxPermSize=256m -Xmx940m -Denv.ORACLE_HOME=/home/dolanotoole/oc4j_10_1_3"
+export ANT_OPTS="-XX:MaxPermSize=256m -Xmx940m -Denv.ORACLE_HOME=$HOME/oc4j_10_1_3"
 #WebLogic variables
-export MW_HOME="/home/dolanotoole/weblogic"
-#export JAVA_OPTIONS="-Dframework.database=ss -Dframework.switchOnFullTextSearch=false -Dframework.log.dir=/home/dolanotoole/log -Djava.security.auth.login.config=/home/dolanotoole/wlsdomain/base_domain/config/jaas.config -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n -javaagent:/home/dolanotoole/wlsdomain/base_domain/lib/aspectjweaver.jar"
+export MW_HOME="$HOME/weblogic"
+#export JAVA_OPTIONS="-Dframework.database=ss -Dframework.switchOnFullTextSearch=false -Dframework.log.dir=$HOME/log -Djava.security.auth.login.config=$HOME/wlsdomain/base_domain/config/jaas.config -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n -javaagent:$HOME/wlsdomain/base_domain/lib/aspectjweaver.jar"
 export USER_MEM_ARGS="-XX:+UseCompressedOops -Xms128m -Xmx1024m -XX:MaxPermSize=256m"
 export NODE_PATH="/usr/local/lib/jsctags"
 ulimit -c unlimited
