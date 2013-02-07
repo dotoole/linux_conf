@@ -1,6 +1,6 @@
 #! /bin/sh
 IP=$(/sbin/ifconfig eth0 | sed -n 's/.*inet *addr:\([0-9\.]*\).*/\1/p')
-echo $IP
+#echo $IP
 (
 echo server framework.corelogic.local
 echo update delete dolan-desktop.corelogic.local A

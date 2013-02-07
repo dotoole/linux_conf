@@ -1,4 +1,4 @@
 #!/bin/bash
-java -Xmx512m -jar lib/fileloader.jar --script finance_load/standard/oracle/xslload.xml --host=localhost --dbname=XE --username=mosaic --password=mosaic --dbtype=oracle --port=1521
+java -Xmx512m -jar lib/fileloader.jar --script finance_load/standard/oracle/xslload.xml --host=ora11g --dbname=orcl --username=mosaic --password=mosaic --dbtype=oracle --port=1521
 
-java -Xmx512m -jar lib/fileloader.jar --script finance_load/standard/oracle/xsdload.xml --host=localhost --dbname=XE --username=mosaic --password=mosaic --dbtype=oracle --port=1521
+java -Xmx512m -jar lib/fileloader.jar --script finance_load/standard/oracle/xsdload.xml --host=ora11g --dbname=orcl --username=mosaic --password=mosaic --dbtype=oracle --port=1521
