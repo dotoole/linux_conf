@@ -44,7 +44,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras extract svn debian zsh-syntax-highlighting)
+plugins=(git git-extras extract svn debian zsh-syntax-highlighting emoji-clock)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -75,6 +75,7 @@ export PATH
 export ANT_OPTS="-XX:MaxPermSize=256m -Xmx940m -Denv.ORACLE_HOME=$HOME/oc4j_10_1_3"
 #WebLogic variables
 export MW_HOME="$HOME/weblogic"
+export WL_HOME="$MW_HOME/wlserver"
 #export JAVA_OPTIONS="-Dframework.database=ss -Dframework.switchOnFullTextSearch=false -Dframework.log.dir=$HOME/log -Djava.security.auth.login.config=$HOME/wlsdomain/base_domain/config/jaas.config -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n -javaagent:$HOME/wlsdomain/base_domain/lib/aspectjweaver.jar"
 export USER_MEM_ARGS="-XX:+UseCompressedOops -Xms128m -Xmx1024m -XX:MaxPermSize=256m"
 export NODE_PATH="/usr/local/lib/jsctags"
