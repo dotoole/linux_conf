@@ -8,7 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 #printf '\033[0;32m%s\033[0m\n' '\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  '
 #printf '\033[0;32m%s\033[0m\n' '                        /____/                       '
 #printf '\033[0;32m%s\033[0m\n' '                                                     '
- 
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -23,9 +23,10 @@ ZSH_THEME="blinks"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshconfig="vim ~/.zshrc"
 alias cdd='ant clean_deploy_dev'
-alias deploy='ant /noresolve deploy_dev' 
+alias deploy='ant /noresolve deploy_dev'
 alias vless='/usr/share/vim/vim73/macros/less.sh'
 alias svndiff='svn diff | colordiff | less -R'
+alias df='df -hx cifs'
 
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"
@@ -53,13 +54,16 @@ source $ZSH/oh-my-zsh.sh
 bindkey -e
 
 # colour man pages
-export LESS_TERMCAP_mb=$'\E[01;31m'
-export LESS_TERMCAP_md=$'\E[01;31m'
-export LESS_TERMCAP_me=$'\E[0m'
-export LESS_TERMCAP_se=$'\E[0m'
-export LESS_TERMCAP_so=$'\E[01;47;34m'
-export LESS_TERMCAP_ue=$'\E[0m'
-export LESS_TERMCAP_us=$'\E[01;32m'
+#-------- Color Manpages
+export LESS_TERMCAP_mb=$'\E[01;31m'             # begin blinking
+export LESS_TERMCAP_md=$'\E[01;31m'             # begin bold
+export LESS_TERMCAP_me=$'\E[0m'                 # end mode
+export LESS_TERMCAP_se=$'\E[0m'                 # end standout-mode
+export LESS_TERMCAP_so=$'\E[01;47;34m'          # begin standout-mode - info box
+export LESS_TERMCAP_ue=$'\E[0m'                 # end underline
+export LESS_TERMCAP_us=$'\E[01;32m'             # begin underline
+#export MANPAGER="/usr/bin/most -s"             # color using most
+
 source $HOME/.localrc
 
 export OC4J_HOME="$HOME/oc4j_10_1_3"
@@ -69,7 +73,7 @@ export JAVA_HOME="$HOME/jdk1.6.0_32"
 #export JBOSS_HOME="$HOME/jboss-6.0.0.Final"
 export TERM=xterm-256color
 ORACLE_HOME=/usr/lib/oracle/xe/app/oracle/product/10.2.0/server
-PATH=$JAVA_HOME/bin:$PATH:$ORACLE_HOME/bin:$JBOSS_HOME/bin
+PATH=$HOME/bin:$JAVA_HOME/bin:$PATH:$ORACLE_HOME/bin:$JBOSS_HOME/bin
 export ORACLE_HOME
 export ORACLE_SID=XE
 export PATH
