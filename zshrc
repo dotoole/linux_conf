@@ -27,6 +27,8 @@ alias deploy='ant /noresolve deploy_dev'
 alias vless='/usr/share/vim/vim73/macros/less.sh'
 alias svndiff='svn diff | colordiff | less -R'
 alias df='df -hx cifs'
+alias android-connect='sudo mtpfs -o allow_other /mnt/nexus7'
+alias android-disconnect='sudo fusermount -u /mnt/nexus7'
 
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"
@@ -46,7 +48,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras extract svn debian zsh-syntax-highlighting)
+plugins=(git git-extras extract svn debian zsh-syntax-highlighting jira gradle)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -71,9 +73,11 @@ export OC4J_HOME="$HOME/oc4j_10_1_3"
 #export JAVA_HOME="$HOME/jdk1.5.0_22"
 export JAVA_HOME="$HOME/jdk1.6.0_32"
 #export JBOSS_HOME="$HOME/jboss-6.0.0.Final"
+export ANT_HOME="$HOME/tools/apache-ant"
+export GRADLE_HOME="$HOME/tools/gradle-1.8"
 export TERM=xterm-256color
 ORACLE_HOME=/usr/lib/oracle/xe/app/oracle/product/10.2.0/server
-PATH=$HOME/bin:$JAVA_HOME/bin:$PATH:$ORACLE_HOME/bin:$JBOSS_HOME/bin
+PATH=$HOME/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$GRADLE_HOME/bin:$PATH:$ORACLE_HOME/bin:$JBOSS_HOME/bin
 export ORACLE_HOME
 export ORACLE_SID=XE
 export PATH

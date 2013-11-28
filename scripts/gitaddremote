@@ -1,0 +1,11 @@
+#!/bin/sh
+REMOTE_NAME=$1-master
+
+git config --add svn-remote.$REMOTE_NAME.url $2
+git config --add svn-remote.$REMOTE_NAME.fetch :refs/remotes/git-svn-$REMOTE_NAME
+
+
+git svn fetch $REMOTE_NAME
+git branch --track $REMOTE_NAME git-svn-$REMOTE_NAME
+git checkout $REMOTE_NAME
+git svn rebase

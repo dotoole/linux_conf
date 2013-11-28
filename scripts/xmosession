@@ -5,7 +5,7 @@ xscreensaver -no-splash &
 #wicd-gtk &
 #gnome-settings-daemon &
 #gnome-sound-applet &
-nm-applet &
+#nm-applet &
 # gnome-keyring-daemon &
 feh --bg-scale ~/Pictures/xmonad_1080p.png
 #xcompmgr -cC &
