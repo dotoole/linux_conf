@@ -1,0 +1,5 @@
+#!/bin/sh
+
+find . -name *Impl.java | grep -v DAO | awk -F"/" '{print $NF}' | sort > impl_files.txt
+grep -irl '@PerformanceLogging' . | awk -F"/" '{print $NF}' | sort > perf_loggers.txt
+diff --side-by-side --suppress-common-lines impl_files.txt perf_loggers.txt
