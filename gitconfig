@@ -10,3 +10,5 @@
     files = show --pretty="format:" --name-only
 [core]
 	pager = less -S
+[push]
+	default = simple
