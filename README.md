@@ -16,6 +16,9 @@ includes
     ln -s ~/git_projects/linux_conf/xmonad ~/.xmonad
     ln -s ~/git_projects/linux_conf/xmobarrc ~/.xmobarrc
     ln -s ~/git_projects/linux_conf/scripts ~/bin
+```
+
+```
     ln -s ~/git_projects/linux_conf/bash_aliases ~/.bash_aliases
     cd
     touch .bash_profile
