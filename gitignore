@@ -1,3 +1,6 @@
 *.swp
 .DS_Store
 .svn
+*.sublime-project
+*.sublime-workspace
+node_modules
