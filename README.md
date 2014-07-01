@@ -8,12 +8,11 @@ includes
 - Xmonad config and scripts for an Xmonad session
 - build helper scripts
 - display mode scripts using disper
-```
-    ln -s ~/git_projects/linux_conf/gitignore ~/.gitignore
-```
+
 
 ```
     ln -s ~/git_projects/linux_conf/gitconfig ~/.gitconfig
+    ln -s ~/git_projects/linux_conf/gitignore ~/.gitignore
     ln -s ~/git_projects/linux_conf/vi/vimrc ~/.vimrc
     ln -s ~/git_projects/linux_conf/vi/vim ~/.vim
     ln -s ~/git_projects/linux_conf/xmonad ~/.xmonad
