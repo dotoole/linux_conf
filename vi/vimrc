@@ -16,3 +16,4 @@ set shiftwidth=4
 set expandtab
 set hlsearch
 :nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+set t_Co=16
