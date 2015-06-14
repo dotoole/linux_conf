@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 #printf '\033[0;32m%s\033[0m\n' '         __                                     __   '
 #printf '\033[0;32m%s\033[0m\n' '  ____  / /_     ____ ___  __  __   ____  _____/ /_  '
@@ -13,10 +13,6 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# bira kphoen mortalscumbag smt tjkirch
-#ZSH_THEME="bira"
-#ZSH_THEME="intheloop"
-#ZSH_THEME="agnoster"
 ZSH_THEME="blinks"
 
 # Example aliases
@@ -48,7 +44,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow git-extras extract svn debian zsh-syntax-highlighting jira gradle)
+plugins=(git extract zsh-syntax-highlighting python django virtualenv bower npm scala sbt go docker vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -67,28 +63,12 @@ export LESS_TERMCAP_us=$'\E[01;32m'             # begin underline
 #export MANPAGER="/usr/bin/most -s"             # color using most
 
 source $HOME/.localrc
+export ARCHFLAGS="-arch x86_64"
 
-export OC4J_HOME="$HOME/oc4j_10_1_3"
-#export ORACLE_HOME="$HOME/oc4j_10_1_3"
-#export JAVA_HOME="$HOME/jdk1.5.0_22"
-export JAVA_HOME="/usr/lib/jvm/java-6-sun"
-#export JBOSS_HOME="$HOME/jboss-6.0.0.Final"
-export ANT_HOME="$HOME/tools/apache-ant"
-export GRADLE_HOME="$HOME/tools/gradle-1.8"
 export TERM=xterm-256color
-#ORACLE_HOME=/usr/lib/oracle/xe/app/oracle/product/10.2.0/server
-PATH=$HOME/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$GRADLE_HOME/bin:$PATH:$ORACLE_HOME/bin:$JBOSS_HOME/bin
-export ORACLE_HOME
-export ORACLE_SID=XE
-export PATH
 
 export ANT_OPTS="-XX:MaxPermSize=256m -Xmx940m -Denv.ORACLE_HOME=$HOME/oc4j_10_1_3"
-# WebLogic variables
-export MW_HOME="$HOME/weblogic"
-export WL_HOME="$MW_HOME/wlserver"
-#export JAVA_OPTIONS="-Dframework.database=ss -Dframework.switchOnFullTextSearch=false -Dframework.log.dir=$HOME/log -Djava.security.auth.login.config=$HOME/wlsdomain/base_domain/config/jaas.config -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n -javaagent:$HOME/wlsdomain/base_domain/lib/aspectjweaver.jar"
-export USER_MEM_ARGS="-XX:+UseCompressedOops -Xms128m -Xmx1024m -XX:MaxPermSize=256m"
-export NODE_PATH="/usr/local/lib/jsctags"
+export NODE_PATH=/usr/local/lib/node_modules:/usr/local/lib/jsctags
 ulimit -c unlimited
 
 # extra colours for ls
