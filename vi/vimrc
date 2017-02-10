@@ -6,9 +6,9 @@ au BufNewFile,BufRead *.hb set filetype=html
 ":colorscheme zenburn  " Set the colorscheme to zenburn
 ":colorscheme habiLight  " Set the colorscheme to habiLight
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 au Bufread,BufNewFile *.feature set filetype=gherkin
-au! Syntax gherkin source ~/.vim/cucumber.vim
+"au! Syntax gherkin source ~/.vim/cucumber.vim
 "set foldmethod=syntax
 set smartindent
 set tabstop=4
